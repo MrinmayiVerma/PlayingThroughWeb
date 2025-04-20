@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Grid Gallery</h1>
+
+  <p>This task demonstrates creating a 3x3 image gallery using CSS Grid.</p>
+
+  <div class="gallery">
+    <img src="data:image/jpeg;base64,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" alt="Image 1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG8y14wCGAoclRImG41wkhEJnwSB6TKIpa3zjU40a7TZ6nDO1PFA&s=10&ec=72940545" alt="Image 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrik8mktT7VEf5IvNckVMhKDTj6-LFlih-or7v-qATodQ9OXQKNA&s=10&ec=72940545" alt="Image 3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDtXP6cjLe2QRLgaUtz8gHF0DMJrFntegifGESpgP2_TdzDfWUA&s=10&ec=72940545" alt="Image 4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_sVLo1ahVF0YSUWCueBwEZ1XTkUVIRaP0zASTK8x0bsWm6-fVQ&s=10&ec=72940545" alt="Image 5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LwZR7eHKBa2Dv6vdEOEs01n_JAILDWG2aiklF9ttph3jUuQ5kg&s=10&ec=72940545" alt="Image 6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9nESBNTHc2i1ioZinJnVK3TlKc6pcC1_PArQukXb4BUdOC-mVuA&s=10&ec=72940545" alt="Image 7">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIET4ib9Hm8H7R8env8gCuy_aBSBbAzrcJiTAITRNsrSW6-1Sacg&s=10&ec=72940545" alt="Image 8">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVtrDZEi3c45VNg9RamdT6DgHY9D4BRs9tz_EHESsiLyNuzcfpw&s=10&ec=72940545" alt="Image 9">
+  </div>
+
+  <footer>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>

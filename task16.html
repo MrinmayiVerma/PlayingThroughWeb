@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Flex</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Gallery Flex</h1>
+
+  <p>This task demonstrates creating a responsive image gallery with hover effects using Flexbox.</p>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/200" alt="Image 1">
+    <img src="https://via.placeholder.com/200" alt="Image 2">
+    <img src="https://via.placeholder.com/200" alt="Image 3">
+    <img src="https://via.placeholder.com/200" alt="Image 4">
+    <img src="https://via.placeholder.com/200" alt="Image 5">
+  </div>
+
+  <footer>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>

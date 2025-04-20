@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page with Snowflakes</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Blue background and snowflakes animation */
+    body {
+      background-color: #3498db; /* Blue background */
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    /* Snowflakes */
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: white;
+      font-size: 1.5rem;
+      opacity: 0.8;
+      pointer-events: none;
+      user-select: none;
+      animation: snow 10s linear infinite;
+    }
+
+    /* Create snowflake animation */
+    @keyframes snow {
+      0% {
+        transform: translateX(0) translateY(-100px);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateX(100px) translateY(100vh);
+        opacity: 1;
+      }
+    }
+
+    /* Random snowflake size */
+    .snowflake:nth-child(odd) {
+      font-size: 1.2rem;
+      animation-duration: 12s;
+    }
+
+    .snowflake:nth-child(even) {
+      font-size: 1.5rem;
+      animation-duration: 8s;
+    }
+
+    .snowflake:nth-child(3n) {
+      font-size: 2rem;
+      animation-duration: 10s;
+    }
+
+    /* Cards layout */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      z-index: 2; /* Keeps cards on top of the snowflakes */
+    }
+
+    .card {
+      width: 250px;
+      height: 150px;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 20px;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Assignment2</h1>
+
+  <!-- Snowflakes -->
+  <div class="snowflakes-container">
+    <!-- Snowflakes will be dynamically created by JS -->
+  </div>
+
+  <!-- Card container -->
+  <div class="card-container">
+    <a href="task1.html" class="card">
+      <div class="card-title">Task 1</div>
+      <div class="card-description">HTML Skeleton Check</div>
+    </a>
+
+    <a href="task2.html" class="card">
+      <div class="card-title">Task 2</div>
+      <div class="card-description">CSS Matchmaking</div>
+    </a>
+
+    <a href="task3.html" class="card">
+      <div class="card-title">Task 3</div>
+      <div class="card-description">Semantic HTML Party</div>
+    </a>
+
+    <a href="task4.html" class="card">
+      <div class="card-title">Task 4</div>
+      <div class="card-description">Box Model Flex</div>
+    </a>
+
+    <a href="task5.html" class="card">
+      <div class="card-title">Task 5</div>
+      <div class="card-description">List Game Strong</div>
+    </a>
+
+    <a href="task6.html" class="card">
+      <div class="card-title">Task 6</div>
+      <div class="card-description">Table Tetris</div>
+    </a>
+
+    <a href="task7.html" class="card">
+      <div class="card-title">Task 7</div>
+      <div class="card-description">Form Energy</div>
+    </a>
+
+    <a href="task8.html" class="card">
+      <div class="card-title">Task 8</div>
+      <div class="card-description">Form Validation Vibes</div>
+    </a>
+
+    <a href="task9.html" class="card">
+      <div class="card-title">Task 9</div>
+      <div class="card-description">Flexbox Navigation</div>
+    </a>
+
+    <a href="task10.html" class="card">
+      <div class="card-title">Task 10</div>
+      <div class="card-description">Grid Gallery</div>
+    </a>
+
+    <a href="task11.html" class="card">
+      <div class="card-title">Task 11</div>
+      <div class="card-description">Responsive Queen/King</div>
+    </a>
+
+    <a href="task12.html" class="card">
+      <div class="card-title">Task 12</div>
+      <div class="card-description">Mobile-First Mindset</div>
+    </a>
+
+    <a href="task13.html" class="card">
+      <div class="card-title">Task 13</div>
+      <div class="card-description">CSS Positioning Power</div>
+    </a>
+
+    <a href="task14.html" class="card">
+      <div class="card-title">Task 14</div>
+      <div class="card-description">Transitions & Transforms</div>
+    </a>
+
+    <a href="task15.html" class="card">
+      <div class="card-title">Task 15</div>
+      <div class="card-description">Animations Only</div>
+    </a>
+
+    <a href="task16.html" class="card">
+      <div class="card-title">Task 16</div>
+      <div class="card-description">REM vs PX Showdown</div>
+    </a>
+
+    <a href="task17.html" class="card">
+      <div class="card-title">Task 17</div>
+      <div class="card-description">Image Gallery Flex</div>
+    </a>
+
+    <a href="task18.html" class="card">
+      <div class="card-title">Task 18</div>
+      <div class="card-description">Hero Section Hero</div>
+    </a>
+
+    <a href="task19.html" class="card">
+      <div class="card-title">Task 19</div>
+      <div class="card-description">Footer Feels</div>
+    </a>
+
+    <a href="task20.html" class="card">
+      <div class="card-title">Task 20</div>
+      <div class="card-description">The Ultimate Showcase</div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="index.html" style="color: white;">Back to Home</a>
+  </footer>
+
+  <!-- Snowflakes JS -->
+  <script>
+    // Generate snowflakes
+    const numSnowflakes = 50;
+    const snowflakesContainer = document.querySelector('.snowflakes-container');
+
+    for (let i = 0; i < numSnowflakes; i++) {
+      const snowflake = document.createElement('div');
+      snowflake.textContent = '❄';
+      snowflake.classList.add('snowflake');
+      
+      // Randomize start position
+      snowflake.style.left = `${Math.random() * 100}vw`;
+      snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Randomize animation duration
+
+      snowflakesContainer.appendChild(snowflake);
+    }
+  </script>
+
+</body>
+</html>

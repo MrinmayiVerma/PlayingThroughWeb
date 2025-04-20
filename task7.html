@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Energy</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    input, select, button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Form Energy</h1>
+
+  <p>This task demonstrates creating a form with name, email, and password fields, as well as radio buttons.</p>
+
+  <form action="#" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="newsletter">Subscribe to newsletter</label>
+    <input type="radio" id="yes" name="newsletter" value="yes"> Yes
+    <input type="radio" id="no" name="newsletter" value="no"> No
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+</body>
+</html>
